@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  /* background-image: linear-gradient(to left, red, blue); */
+}
+/* to set linear gradient for body we need to specify height*/
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  /* background-image: linear-gradient(to right, red, blue); */
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    border: 0.5rem solid;
+    border-radius: 2rem;
+  }
+}
+
+span {
+  /* background-image: linear-gradient(to left, red, blue); */
+  font-size: large;
+  /* border-radius: 2rem; */
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+}
+
+#quotes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  font-size: x-large;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 40vw;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+button {
+  margin: auto;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* border-radius: 1rem; */
+  cursor: pointer;
+  /* background-image: linear-gradient(to left, red, blue); */
+}
+
+@media screen and (min-width: 480px) {
+  span {
+    font-size: x-large;
+  }
+  #quotes {
+    height: 10vh;
+  }
+}
